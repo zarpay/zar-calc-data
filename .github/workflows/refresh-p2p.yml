@@ -1,0 +1,40 @@
+name: Refresh P2P rates
+
+on:
+  schedule:
+    - cron: '0 * * * *'  # hourly
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch P2P rates from Binance/Bybit/OKX
+        run: node scripts/fetch-p2p.js --json-only > p2p.json
+
+      - name: Validate JSON
+        run: |
+          jq -e . p2p.json > /dev/null
+          echo "Fetched $(jq '.results | length' p2p.json) currencies. Sample:"
+          jq '.results | to_entries | .[0:3]' p2p.json
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet -- p2p.json; then
+            echo "No changes to p2p.json — skipping commit."
+            exit 0
+          fi
+          git config user.name "p2p-refresh-bot"
+          git config user.email "noreply@zarpay.app"
+          git add p2p.json
+          git commit -m "Refresh P2P rates ($(date -u +%Y-%m-%dT%H:%M:%SZ))"
+          git push
