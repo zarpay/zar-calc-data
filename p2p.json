@@ -1,5 +1,5 @@
 {
-  "ts": 1780774144739,
+  "ts": 1780777345349,
   "results": {
     "BD": {
       "fiat": "BDT",
@@ -12,7 +12,7 @@
     "PK": {
       "fiat": "PKR",
       "marketRate": 278.55863,
-      "p2pMedian": 286.75,
+      "p2pMedian": 286.5,
       "offsetPct": 2.9,
       "source": "binance",
       "nAds": 10
@@ -36,8 +36,8 @@
     "GH": {
       "fiat": "GHS",
       "marketRate": 11.787442,
-      "p2pMedian": 12.4,
-      "offsetPct": 5.2,
+      "p2pMedian": 12.41,
+      "offsetPct": 5.3,
       "source": "bybit",
       "nAds": 10
     },
@@ -68,7 +68,7 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3568.426723,
-      "p2pMedian": 3563,
+      "p2pMedian": 3562.13,
       "offsetPct": -0.2,
       "source": "binance",
       "nAds": 10
@@ -76,7 +76,7 @@
     "UG": {
       "fiat": "UGX",
       "marketRate": 3736.563335,
-      "p2pMedian": 3788.5,
+      "p2pMedian": 3787.83,
       "offsetPct": 1.4,
       "source": "binance",
       "nAds": 10
@@ -84,48 +84,48 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.618434,
-      "p2pMedian": 7.934,
-      "offsetPct": 4.1,
+      "p2pMedian": 7.935,
+      "offsetPct": 4.2,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.129332,
-      "p2pMedian": 62.13,
-      "offsetPct": 6.9,
+      "p2pMedian": 59.52,
+      "offsetPct": 2.4,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.594325,
-      "p2pMedian": 27.61,
-      "offsetPct": 3.8,
+      "p2pMedian": 27.58,
+      "offsetPct": 3.7,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 458.550255,
-      "p2pMedian": 469.28,
-      "offsetPct": 2.3,
+      "p2pMedian": 469.46,
+      "offsetPct": 2.4,
       "source": "binance",
       "nAds": 10
     },
     "PY": {
       "fiat": "PYG",
       "marketRate": 6098.459035,
-      "p2pMedian": 6107.01,
-      "offsetPct": 0.1,
+      "p2pMedian": 6114,
+      "offsetPct": 0.3,
       "source": "binance",
       "nAds": 10
     },
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 17.706675,
-      "p2pMedian": 18.49,
-      "offsetPct": 4.4,
+      "p2pMedian": 18.5,
+      "offsetPct": 4.5,
       "source": "binance",
       "nAds": 10
     }
