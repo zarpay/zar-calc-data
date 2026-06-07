@@ -1,18 +1,18 @@
 {
-  "ts": 1780863841068,
+  "ts": 1780867458518,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 122.723785,
-      "p2pMedian": 127.82,
-      "offsetPct": 4.2,
+      "p2pMedian": 127.71,
+      "offsetPct": 4.1,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 278.677027,
-      "p2pMedian": 297.89,
+      "p2pMedian": 298,
       "offsetPct": 6.9,
       "source": "binance",
       "nAds": 10
@@ -52,7 +52,7 @@
     "AO": {
       "fiat": "AOA",
       "marketRate": 922.483218,
-      "p2pMedian": 1126,
+      "p2pMedian": 1126.39,
       "offsetPct": 22.1,
       "source": "binance",
       "nAds": 10
@@ -68,15 +68,15 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3568.422762,
-      "p2pMedian": 3576,
-      "offsetPct": 0.2,
+      "p2pMedian": 3590,
+      "offsetPct": 0.6,
       "source": "binance",
       "nAds": 10
     },
     "UG": {
       "fiat": "UGX",
       "marketRate": 3733.83799,
-      "p2pMedian": 3793.1,
+      "p2pMedian": 3793.11,
       "offsetPct": 1.6,
       "source": "binance",
       "nAds": 10
@@ -100,15 +100,15 @@
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.594762,
-      "p2pMedian": 27.76,
-      "offsetPct": 4.4,
+      "p2pMedian": 27.78,
+      "offsetPct": 4.5,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 458.560652,
-      "p2pMedian": 469.66,
+      "p2pMedian": 469.67,
       "offsetPct": 2.4,
       "source": "binance",
       "nAds": 10
@@ -116,7 +116,7 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 6097.830088,
-      "p2pMedian": 6188,
+      "p2pMedian": 6190.08,
       "offsetPct": 1.5,
       "source": "binance",
       "nAds": 10
@@ -124,8 +124,8 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 17.715989,
-      "p2pMedian": 18.34,
-      "offsetPct": 3.5,
+      "p2pMedian": 18.32,
+      "offsetPct": 3.4,
       "source": "binance",
       "nAds": 10
     }
