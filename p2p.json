@@ -1,27 +1,27 @@
 {
-  "ts": 1780903958599,
+  "ts": 1780910988941,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 122.808651,
-      "p2pMedian": 127.92,
-      "offsetPct": 4.2,
+      "p2pMedian": 127.86,
+      "offsetPct": 4.1,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 278.30479,
-      "p2pMedian": 297.97,
-      "offsetPct": 7.1,
+      "p2pMedian": 289.1,
+      "offsetPct": 3.9,
       "source": "binance",
       "nAds": 10
     },
     "LK": {
       "fiat": "LKR",
       "marketRate": 334.853701,
-      "p2pMedian": 345.2,
-      "offsetPct": 3.1,
+      "p2pMedian": 346,
+      "offsetPct": 3.3,
       "source": "binance",
       "nAds": 10
     },
@@ -52,8 +52,8 @@
     "AO": {
       "fiat": "AOA",
       "marketRate": 920.846514,
-      "p2pMedian": 1125.96,
-      "offsetPct": 22.3,
+      "p2pMedian": 1126.77,
+      "offsetPct": 22.4,
       "source": "binance",
       "nAds": 10
     },
@@ -68,15 +68,15 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3567.796231,
-      "p2pMedian": 3562.3,
-      "offsetPct": -0.2,
+      "p2pMedian": 3563,
+      "offsetPct": -0.1,
       "source": "binance",
       "nAds": 10
     },
     "UG": {
       "fiat": "UGX",
       "marketRate": 3742.448406,
-      "p2pMedian": 3786.1,
+      "p2pMedian": 3787.84,
       "offsetPct": 1.2,
       "source": "binance",
       "nAds": 10
@@ -116,16 +116,16 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 6102.777837,
-      "p2pMedian": 6127.3,
-      "offsetPct": 0.4,
+      "p2pMedian": 6140.8,
+      "offsetPct": 0.6,
       "source": "binance",
       "nAds": 10
     },
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 17.556677,
-      "p2pMedian": 18.41,
-      "offsetPct": 4.9,
+      "p2pMedian": 18.34,
+      "offsetPct": 4.5,
       "source": "binance",
       "nAds": 10
     }
