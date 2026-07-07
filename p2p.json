@@ -1,18 +1,18 @@
 {
-  "ts": 1783456367575,
+  "ts": 1783459714386,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.274664,
-      "p2pMedian": 128,
-      "offsetPct": 3.8,
+      "p2pMedian": 127.68,
+      "offsetPct": 3.6,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 278.267828,
-      "p2pMedian": 286.77,
+      "p2pMedian": 287,
       "offsetPct": 3.1,
       "source": "binance",
       "nAds": 10
@@ -68,8 +68,8 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3344.299528,
-      "p2pMedian": 3305,
-      "offsetPct": -1.2,
+      "p2pMedian": 3314,
+      "offsetPct": -0.9,
       "source": "binance",
       "nAds": 10
     },
@@ -84,7 +84,7 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.628734,
-      "p2pMedian": 7.803,
+      "p2pMedian": 7.806,
       "offsetPct": 2.3,
       "source": "binance",
       "nAds": 10
@@ -92,23 +92,23 @@
     "DO": {
       "fiat": "DOP",
       "marketRate": 59.213161,
-      "p2pMedian": 61.1,
-      "offsetPct": 3.2,
+      "p2pMedian": 61.16,
+      "offsetPct": 3.3,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.766393,
-      "p2pMedian": 28.31,
-      "offsetPct": 5.8,
+      "p2pMedian": 28.5,
+      "offsetPct": 6.5,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 455.618765,
-      "p2pMedian": 456.15,
+      "p2pMedian": 456.24,
       "offsetPct": 0.1,
       "source": "binance",
       "nAds": 10
@@ -116,7 +116,7 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 6064.721275,
-      "p2pMedian": 5970.01,
+      "p2pMedian": 5970.05,
       "offsetPct": -1.6,
       "source": "binance",
       "nAds": 10
@@ -124,7 +124,7 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 18.375649,
-      "p2pMedian": 18.91,
+      "p2pMedian": 18.9,
       "offsetPct": 2.9,
       "source": "binance",
       "nAds": 10
