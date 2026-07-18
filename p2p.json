@@ -1,26 +1,26 @@
 {
-  "ts": 1784387914135,
+  "ts": 1784391383716,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.245194,
-      "p2pMedian": 128.5,
-      "offsetPct": 4.3,
+      "p2pMedian": 128.71,
+      "offsetPct": 4.4,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 278.013177,
-      "p2pMedian": 300.15,
-      "offsetPct": 8,
+      "p2pMedian": 300.06,
+      "offsetPct": 7.9,
       "source": "binance",
       "nAds": 10
     },
     "LK": {
       "fiat": "LKR",
       "marketRate": 336.156459,
-      "p2pMedian": 345.25,
+      "p2pMedian": 345.2,
       "offsetPct": 2.7,
       "source": "binance",
       "nAds": 10
@@ -68,15 +68,15 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3225.081918,
-      "p2pMedian": 3236.06,
-      "offsetPct": 0.3,
+      "p2pMedian": 3237,
+      "offsetPct": 0.4,
       "source": "binance",
       "nAds": 10
     },
     "UG": {
       "fiat": "UGX",
       "marketRate": 3669.521638,
-      "p2pMedian": 3724.1,
+      "p2pMedian": 3726.02,
       "offsetPct": 1.5,
       "source": "binance",
       "nAds": 10
@@ -84,7 +84,7 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.626168,
-      "p2pMedian": 7.821,
+      "p2pMedian": 7.823,
       "offsetPct": 2.6,
       "source": "binance",
       "nAds": 10
@@ -100,23 +100,23 @@
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.760604,
-      "p2pMedian": 27.62,
-      "offsetPct": 3.2,
+      "p2pMedian": 27.7,
+      "offsetPct": 3.5,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 454.018753,
-      "p2pMedian": 449,
-      "offsetPct": -1.1,
+      "p2pMedian": 449.7,
+      "offsetPct": -1,
       "source": "binance",
       "nAds": 10
     },
     "PY": {
       "fiat": "PYG",
       "marketRate": 6041.083696,
-      "p2pMedian": 6000,
+      "p2pMedian": 5997.51,
       "offsetPct": -0.7,
       "source": "binance",
       "nAds": 10
