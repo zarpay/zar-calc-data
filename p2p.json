@@ -1,5 +1,5 @@
 {
-  "ts": 1785058720878,
+  "ts": 1785061858453,
   "results": {
     "BD": {
       "fiat": "BDT",
@@ -76,7 +76,7 @@
     "UG": {
       "fiat": "UGX",
       "marketRate": 3700.940033,
-      "p2pMedian": 3903.01,
+      "p2pMedian": 3903.02,
       "offsetPct": 5.5,
       "source": "binance",
       "nAds": 10
@@ -124,8 +124,8 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 18.540184,
-      "p2pMedian": 19.29,
-      "offsetPct": 4,
+      "p2pMedian": 19.27,
+      "offsetPct": 3.9,
       "source": "binance",
       "nAds": 10
     }
