@@ -1,5 +1,5 @@
 {
-  "ts": 1785567533157,
+  "ts": 1785570515400,
   "results": {
     "BD": {
       "fiat": "BDT",
@@ -12,8 +12,8 @@
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.678942,
-      "p2pMedian": 288,
-      "offsetPct": 3.7,
+      "p2pMedian": 291,
+      "offsetPct": 4.8,
       "source": "binance",
       "nAds": 10
     },
@@ -68,8 +68,8 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3203.026222,
-      "p2pMedian": 3132,
-      "offsetPct": -2.2,
+      "p2pMedian": 3130,
+      "offsetPct": -2.3,
       "source": "binance",
       "nAds": 10
     },
