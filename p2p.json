@@ -1,19 +1,19 @@
 {
-  "ts": 1785612268625,
+  "ts": 1785615434651,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.477955,
-      "p2pMedian": 128.75,
-      "offsetPct": 4.3,
+      "p2pMedian": 128.85,
+      "offsetPct": 4.4,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.678942,
-      "p2pMedian": 292,
-      "offsetPct": 5.2,
+      "p2pMedian": 291,
+      "offsetPct": 4.8,
       "source": "binance",
       "nAds": 10
     },
@@ -68,7 +68,7 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3203.026222,
-      "p2pMedian": 3141.93,
+      "p2pMedian": 3143,
       "offsetPct": -1.9,
       "source": "binance",
       "nAds": 10
@@ -84,39 +84,39 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.624399,
-      "p2pMedian": 7.788,
-      "offsetPct": 2.1,
+      "p2pMedian": 7.797,
+      "offsetPct": 2.3,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.076959,
-      "p2pMedian": 60,
-      "offsetPct": 3.3,
+      "p2pMedian": 59.81,
+      "offsetPct": 3,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.77921,
-      "p2pMedian": 28.62,
-      "offsetPct": 6.9,
+      "p2pMedian": 28.7,
+      "offsetPct": 7.2,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 454.476744,
-      "p2pMedian": 457.66,
-      "offsetPct": 0.7,
+      "p2pMedian": 459.15,
+      "offsetPct": 1,
       "source": "binance",
       "nAds": 10
     },
     "PY": {
       "fiat": "PYG",
       "marketRate": 6005.383467,
-      "p2pMedian": 5922.3,
+      "p2pMedian": 5923.25,
       "offsetPct": -1.4,
       "source": "binance",
       "nAds": 10
@@ -124,7 +124,7 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 18.848928,
-      "p2pMedian": 19.37,
+      "p2pMedian": 19.38,
       "offsetPct": 2.8,
       "source": "binance",
       "nAds": 10
