@@ -1,10 +1,10 @@
 {
-  "ts": 1785765004488,
+  "ts": 1785769101105,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.417528,
-      "p2pMedian": 128.01,
+      "p2pMedian": 127.98,
       "offsetPct": 3.7,
       "source": "binance",
       "nAds": 10
@@ -12,8 +12,8 @@
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.748503,
-      "p2pMedian": 299.82,
-      "offsetPct": 7.9,
+      "p2pMedian": 299.84,
+      "offsetPct": 8,
       "source": "binance",
       "nAds": 10
     },
@@ -68,8 +68,8 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3142.815729,
-      "p2pMedian": 3175,
-      "offsetPct": 1,
+      "p2pMedian": 3210.08,
+      "offsetPct": 2.1,
       "source": "binance",
       "nAds": 10
     },
@@ -84,8 +84,8 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.628823,
-      "p2pMedian": 7.785,
-      "offsetPct": 2,
+      "p2pMedian": 7.751,
+      "offsetPct": 1.6,
       "source": "binance",
       "nAds": 10
     },
@@ -108,16 +108,16 @@
     "CR": {
       "fiat": "CRC",
       "marketRate": 454.482488,
-      "p2pMedian": 457.7,
-      "offsetPct": 0.7,
+      "p2pMedian": 458.01,
+      "offsetPct": 0.8,
       "source": "binance",
       "nAds": 10
     },
     "PY": {
       "fiat": "PYG",
       "marketRate": 5986.9446,
-      "p2pMedian": 5888,
-      "offsetPct": -1.7,
+      "p2pMedian": 5876,
+      "offsetPct": -1.9,
       "source": "binance",
       "nAds": 10
     },
