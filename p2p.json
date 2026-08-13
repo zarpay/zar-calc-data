@@ -1,26 +1,26 @@
 {
-  "ts": 1786579977229,
+  "ts": 1786584632036,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.227235,
-      "p2pMedian": 128.2,
-      "offsetPct": 4,
+      "p2pMedian": 129,
+      "offsetPct": 4.7,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.864739,
-      "p2pMedian": 286.2,
-      "offsetPct": 3,
+      "p2pMedian": 285.35,
+      "offsetPct": 2.7,
       "source": "binance",
       "nAds": 10
     },
     "LK": {
       "fiat": "LKR",
       "marketRate": 333.969267,
-      "p2pMedian": 340.2,
+      "p2pMedian": 340.15,
       "offsetPct": 1.9,
       "source": "binance",
       "nAds": 10
@@ -68,7 +68,7 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3131.993848,
-      "p2pMedian": 3126.8,
+      "p2pMedian": 3126.66,
       "offsetPct": -0.2,
       "source": "binance",
       "nAds": 10
@@ -84,40 +84,40 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.625855,
-      "p2pMedian": 7.76,
-      "offsetPct": 1.8,
+      "p2pMedian": 7.768,
+      "offsetPct": 1.9,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.320399,
-      "p2pMedian": 60,
-      "offsetPct": 2.9,
+      "p2pMedian": 60.5,
+      "offsetPct": 3.7,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.795726,
-      "p2pMedian": 28.25,
-      "offsetPct": 5.4,
+      "p2pMedian": 28.3,
+      "offsetPct": 5.6,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 453.993413,
-      "p2pMedian": 454,
-      "offsetPct": 0,
+      "p2pMedian": 453.7,
+      "offsetPct": -0.1,
       "source": "binance",
       "nAds": 10
     },
     "PY": {
       "fiat": "PYG",
       "marketRate": 5972.446685,
-      "p2pMedian": 5920.99,
-      "offsetPct": -0.9,
+      "p2pMedian": 5925,
+      "offsetPct": -0.8,
       "source": "binance",
       "nAds": 10
     },
