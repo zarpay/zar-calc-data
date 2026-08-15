@@ -1,26 +1,26 @@
 {
-  "ts": 1786813432638,
+  "ts": 1786816946096,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 122.810737,
-      "p2pMedian": 129.2,
-      "offsetPct": 5.2,
+      "p2pMedian": 128.7,
+      "offsetPct": 4.8,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.738659,
-      "p2pMedian": 285.12,
-      "offsetPct": 2.7,
+      "p2pMedian": 291,
+      "offsetPct": 4.8,
       "source": "binance",
       "nAds": 10
     },
     "LK": {
       "fiat": "LKR",
       "marketRate": 333.168242,
-      "p2pMedian": 339.95,
+      "p2pMedian": 339.86,
       "offsetPct": 2,
       "source": "binance",
       "nAds": 10
@@ -68,7 +68,7 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3137.586264,
-      "p2pMedian": 3115,
+      "p2pMedian": 3116,
       "offsetPct": -0.7,
       "source": "binance",
       "nAds": 10
@@ -84,7 +84,7 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.630152,
-      "p2pMedian": 7.78,
+      "p2pMedian": 7.786,
       "offsetPct": 2,
       "source": "binance",
       "nAds": 10
@@ -92,7 +92,7 @@
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.447534,
-      "p2pMedian": 59.67,
+      "p2pMedian": 59.7,
       "offsetPct": 2.1,
       "source": "binance",
       "nAds": 10
@@ -100,24 +100,24 @@
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.817151,
-      "p2pMedian": 27.9,
-      "offsetPct": 4,
+      "p2pMedian": 27.93,
+      "offsetPct": 4.1,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 451.832071,
-      "p2pMedian": 454.1,
-      "offsetPct": 0.5,
+      "p2pMedian": 454.53,
+      "offsetPct": 0.6,
       "source": "binance",
       "nAds": 10
     },
     "PY": {
       "fiat": "PYG",
       "marketRate": 5991.308139,
-      "p2pMedian": 6000.04,
-      "offsetPct": 0.1,
+      "p2pMedian": 6001.99,
+      "offsetPct": 0.2,
       "source": "binance",
       "nAds": 10
     },
