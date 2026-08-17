@@ -1,10 +1,10 @@
 {
-  "ts": 1786986346469,
+  "ts": 1786989945861,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 122.722063,
-      "p2pMedian": 128.75,
+      "p2pMedian": 128.71,
       "offsetPct": 4.9,
       "source": "binance",
       "nAds": 10
@@ -20,7 +20,7 @@
     "LK": {
       "fiat": "LKR",
       "marketRate": 332.495758,
-      "p2pMedian": 339.51,
+      "p2pMedian": 339.43,
       "offsetPct": 2.1,
       "source": "binance",
       "nAds": 10
@@ -68,8 +68,8 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3124.110043,
-      "p2pMedian": 3125.79,
-      "offsetPct": 0.1,
+      "p2pMedian": 3121,
+      "offsetPct": -0.1,
       "source": "binance",
       "nAds": 10
     },
@@ -84,15 +84,15 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.621269,
-      "p2pMedian": 7.811,
-      "offsetPct": 2.5,
+      "p2pMedian": 7.79,
+      "offsetPct": 2.2,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.514131,
-      "p2pMedian": 60.03,
+      "p2pMedian": 60.05,
       "offsetPct": 2.6,
       "source": "binance",
       "nAds": 10
@@ -100,15 +100,15 @@
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.799112,
-      "p2pMedian": 28.35,
-      "offsetPct": 5.8,
+      "p2pMedian": 28.3,
+      "offsetPct": 5.6,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 448.933752,
-      "p2pMedian": 461.15,
+      "p2pMedian": 461,
       "offsetPct": 2.7,
       "source": "binance",
       "nAds": 10
@@ -116,15 +116,15 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 5979.387185,
-      "p2pMedian": 5975.08,
-      "offsetPct": -0.1,
+      "p2pMedian": 5985,
+      "offsetPct": 0.1,
       "source": "binance",
       "nAds": 10
     },
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 18.823031,
-      "p2pMedian": 19.53,
+      "p2pMedian": 19.54,
       "offsetPct": 3.8,
       "source": "binance",
       "nAds": 10
