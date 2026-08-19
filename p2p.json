@@ -1,18 +1,18 @@
 {
-  "ts": 1787112706086,
+  "ts": 1787116075295,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 122.192682,
-      "p2pMedian": 128.45,
-      "offsetPct": 5.1,
+      "p2pMedian": 128.56,
+      "offsetPct": 5.2,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.746349,
-      "p2pMedian": 285,
+      "p2pMedian": 284.85,
       "offsetPct": 2.6,
       "source": "binance",
       "nAds": 10
@@ -20,7 +20,7 @@
     "LK": {
       "fiat": "LKR",
       "marketRate": 331.837604,
-      "p2pMedian": 336.51,
+      "p2pMedian": 336.5,
       "offsetPct": 1.4,
       "source": "binance",
       "nAds": 10
@@ -36,7 +36,7 @@
     "GH": {
       "fiat": "GHS",
       "marketRate": 11.063152,
-      "p2pMedian": 11.81,
+      "p2pMedian": 11.82,
       "offsetPct": 6.8,
       "source": "bybit",
       "nAds": 10
@@ -68,8 +68,8 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3135.191066,
-      "p2pMedian": 3075.04,
-      "offsetPct": -1.9,
+      "p2pMedian": 3071,
+      "offsetPct": -2,
       "source": "binance",
       "nAds": 10
     },
@@ -92,7 +92,7 @@
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.791467,
-      "p2pMedian": 60.14,
+      "p2pMedian": 60.13,
       "offsetPct": 2.3,
       "source": "binance",
       "nAds": 10
@@ -100,15 +100,15 @@
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.819349,
-      "p2pMedian": 28.51,
-      "offsetPct": 6.3,
+      "p2pMedian": 28.54,
+      "offsetPct": 6.4,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 449.584268,
-      "p2pMedian": 456.52,
+      "p2pMedian": 456.5,
       "offsetPct": 1.5,
       "source": "binance",
       "nAds": 10
@@ -124,8 +124,8 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 18.812674,
-      "p2pMedian": 19.38,
-      "offsetPct": 3,
+      "p2pMedian": 19.41,
+      "offsetPct": 3.2,
       "source": "binance",
       "nAds": 10
     }
