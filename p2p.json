@@ -1,27 +1,27 @@
 {
-  "ts": 1787674251349,
+  "ts": 1787677759800,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 122.453121,
-      "p2pMedian": 128.3,
-      "offsetPct": 4.8,
+      "p2pMedian": 128.4,
+      "offsetPct": 4.9,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 277.774758,
-      "p2pMedian": 288.49,
-      "offsetPct": 3.9,
+      "p2pMedian": 286.52,
+      "offsetPct": 3.1,
       "source": "binance",
       "nAds": 10
     },
     "LK": {
       "fiat": "LKR",
       "marketRate": 328.861343,
-      "p2pMedian": 333.7,
-      "offsetPct": 1.5,
+      "p2pMedian": 334.2,
+      "offsetPct": 1.6,
       "source": "binance",
       "nAds": 10
     },
@@ -68,8 +68,8 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3042.806266,
-      "p2pMedian": 3069.1,
-      "offsetPct": 0.9,
+      "p2pMedian": 3075,
+      "offsetPct": 1.1,
       "source": "binance",
       "nAds": 10
     },
@@ -84,16 +84,16 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.621545,
-      "p2pMedian": 7.836,
-      "offsetPct": 2.8,
+      "p2pMedian": 7.844,
+      "offsetPct": 2.9,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.633082,
-      "p2pMedian": 59.85,
-      "offsetPct": 2.1,
+      "p2pMedian": 59.65,
+      "offsetPct": 1.7,
       "source": "binance",
       "nAds": 10
     },
@@ -108,7 +108,7 @@
     "CR": {
       "fiat": "CRC",
       "marketRate": 452.532218,
-      "p2pMedian": 459.71,
+      "p2pMedian": 459.76,
       "offsetPct": 1.6,
       "source": "binance",
       "nAds": 10
@@ -116,7 +116,7 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 6014.510387,
-      "p2pMedian": 5952.14,
+      "p2pMedian": 5953.18,
       "offsetPct": -1,
       "source": "binance",
       "nAds": 10
@@ -124,7 +124,7 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 18.95296,
-      "p2pMedian": 19.59,
+      "p2pMedian": 19.6,
       "offsetPct": 3.4,
       "source": "binance",
       "nAds": 10
