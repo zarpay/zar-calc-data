@@ -1,10 +1,10 @@
 {
-  "ts": 1789250528250,
+  "ts": 1789254115438,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.292723,
-      "p2pMedian": 127.22,
+      "p2pMedian": 127.2,
       "offsetPct": 3.2,
       "source": "binance",
       "nAds": 10
@@ -36,8 +36,8 @@
     "GH": {
       "fiat": "GHS",
       "marketRate": 11.413414,
-      "p2pMedian": 11.85,
-      "offsetPct": 3.8,
+      "p2pMedian": 11.81,
+      "offsetPct": 3.5,
       "source": "bybit",
       "nAds": 10
     },
@@ -68,7 +68,7 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3105.797863,
-      "p2pMedian": 3063.01,
+      "p2pMedian": 3062,
       "offsetPct": -1.4,
       "source": "binance",
       "nAds": 10
@@ -84,31 +84,31 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.642185,
-      "p2pMedian": 7.882,
-      "offsetPct": 3.1,
+      "p2pMedian": 7.884,
+      "offsetPct": 3.2,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 58.825358,
-      "p2pMedian": 60.2,
-      "offsetPct": 2.3,
+      "p2pMedian": 60.31,
+      "offsetPct": 2.5,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.852447,
-      "p2pMedian": 27.48,
-      "offsetPct": 2.3,
+      "p2pMedian": 27.45,
+      "offsetPct": 2.2,
       "source": "binance",
       "nAds": 10
     },
     "CR": {
       "fiat": "CRC",
       "marketRate": 454.373787,
-      "p2pMedian": 448.53,
+      "p2pMedian": 448.54,
       "offsetPct": -1.3,
       "source": "binance",
       "nAds": 10
@@ -116,7 +116,7 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 5904.044108,
-      "p2pMedian": 5916.03,
+      "p2pMedian": 5914,
       "offsetPct": 0.2,
       "source": "binance",
       "nAds": 10
@@ -124,7 +124,7 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 19.197726,
-      "p2pMedian": 19.86,
+      "p2pMedian": 19.85,
       "offsetPct": 3.4,
       "source": "binance",
       "nAds": 10
