@@ -1,10 +1,10 @@
 {
-  "ts": 1789873357394,
+  "ts": 1789876942185,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 123.324304,
-      "p2pMedian": 128.3,
+      "p2pMedian": 128.31,
       "offsetPct": 4,
       "source": "binance",
       "nAds": 10
@@ -12,7 +12,7 @@
     "PK": {
       "fiat": "PKR",
       "marketRate": 278.631272,
-      "p2pMedian": 284.82,
+      "p2pMedian": 284.8,
       "offsetPct": 2.2,
       "source": "binance",
       "nAds": 10
@@ -68,39 +68,39 @@
     "CO": {
       "fiat": "COP",
       "marketRate": 3140.322314,
-      "p2pMedian": 3148,
-      "offsetPct": 0.2,
+      "p2pMedian": 3150,
+      "offsetPct": 0.3,
       "source": "binance",
       "nAds": 10
     },
     "UG": {
       "fiat": "UGX",
       "marketRate": 3899.068895,
-      "p2pMedian": 3933.5,
-      "offsetPct": 0.9,
+      "p2pMedian": 3942,
+      "offsetPct": 1.1,
       "source": "binance",
       "nAds": 10
     },
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.703054,
-      "p2pMedian": 7.91,
-      "offsetPct": 2.7,
+      "p2pMedian": 7.9,
+      "offsetPct": 2.6,
       "source": "binance",
       "nAds": 10
     },
     "DO": {
       "fiat": "DOP",
       "marketRate": 59.538816,
-      "p2pMedian": 59.8,
-      "offsetPct": 0.4,
+      "p2pMedian": 59.93,
+      "offsetPct": 0.7,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 27.088325,
-      "p2pMedian": 27.15,
+      "p2pMedian": 27.14,
       "offsetPct": 0.2,
       "source": "binance",
       "nAds": 10
@@ -108,7 +108,7 @@
     "CR": {
       "fiat": "CRC",
       "marketRate": 451.508017,
-      "p2pMedian": 450.54,
+      "p2pMedian": 450.58,
       "offsetPct": -0.2,
       "source": "binance",
       "nAds": 10
@@ -124,8 +124,8 @@
     "ZM": {
       "fiat": "ZMW",
       "marketRate": 19.729536,
-      "p2pMedian": 20.29,
-      "offsetPct": 2.8,
+      "p2pMedian": 20.3,
+      "offsetPct": 2.9,
       "source": "binance",
       "nAds": 10
     }
