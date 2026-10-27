@@ -35,27 +35,55 @@ const CURRENCIES = [
   ['GT','GTQ'], ['DO','DOP'], ['HN','HNL'], ['CR','CRC'], ['PY','PYG'], ['ZM','ZMW']
 ];
 
+const MAX_BYTES = 8 * 1024 * 1024;
+const TIMEOUT_MS = 15000;
+
 function request(opts, body) {
   return new Promise((resolve) => {
     const req = https.request(opts, (res) => {
       let raw = '';
-      res.on('data', c => raw += c);
+      let bytes = 0;
+      res.on('data', c => {
+        bytes += c.length;
+        if (bytes > MAX_BYTES) {
+          req.destroy(new Error('response too large'));
+          return;
+        }
+        raw += c;
+      });
+      res.on('error', () => resolve(null));
       res.on('end', () => {
-        try { resolve(JSON.parse(raw)); }
-        catch (e) { resolve(null); }
+        try {
+          resolve(JSON.parse(raw));
+        } catch (e) {
+          resolve(null);
+        }
       });
     });
+    req.setTimeout(TIMEOUT_MS, () => req.destroy(new Error('timeout')));
     req.on('error', () => resolve(null));
     if (body) req.write(body);
     req.end();
   });
 }
 
+/**
+ * Validates whether a P2P price is plausible compared to spot FX market rate.
+ * Ignores rates that deviate by more than 50% from the market spot rate.
+ */
+function isPlausiblePrice(price, mktRate) {
+  if (!price || isNaN(price) || price <= 0) return false;
+  if (!mktRate || isNaN(mktRate) || mktRate <= 0) return true;
+  const ratio = price / mktRate;
+  return ratio >= 0.5 && ratio <= 1.5;
+}
+
 // Binance P2P — POST to /bapi/c2c/v2/friendly/c2c/adv/search
-async function binance(fiat) {
+async function binance(fiat, fx) {
   const body = JSON.stringify({ asset: 'USDT', fiat, page: 1, rows: 10, tradeType: 'SELL' });
   const j = await request({
-    method: 'POST', host: 'p2p.binance.com',
+    method: 'POST',
+    host: 'p2p.binance.com',
     path: '/bapi/c2c/v2/friendly/c2c/adv/search',
     headers: {
       'Content-Type': 'application/json',
@@ -64,18 +92,23 @@ async function binance(fiat) {
     }
   }, body);
   const data = (j && j.data) || [];
-  return data.filter(d => d.adv && d.adv.price).map(d => parseFloat(d.adv.price));
+  const mkt = fx[fiat];
+  return data
+    .filter(d => d.adv && d.adv.price)
+    .map(d => parseFloat(d.adv.price))
+    .filter(p => isPlausiblePrice(p, mkt));
 }
 
 // Bybit P2P — POST to /fiat/otc/item/online (side "0" = sell, i.e. BUY ads from searcher's perspective)
-async function bybit(fiat) {
+async function bybit(fiat, fx) {
   const body = JSON.stringify({
     userId: '', tokenId: 'USDT', currencyId: fiat, payment: [],
     side: '0', size: '10', page: '1', amount: '',
     vaMaker: false, bulkMaker: false, canTrade: false
   });
   const j = await request({
-    method: 'POST', host: 'api2.bybit.com',
+    method: 'POST',
+    host: 'api2.bybit.com',
     path: '/fiat/otc/item/online',
     headers: {
       'Content-Type': 'application/json',
@@ -84,26 +117,36 @@ async function bybit(fiat) {
     }
   }, body);
   const items = (j && j.result && j.result.items) || [];
-  return items.filter(a => a.price).map(a => parseFloat(a.price));
+  const mkt = fx[fiat];
+  return items
+    .filter(a => a.price)
+    .map(a => parseFloat(a.price))
+    .filter(p => isPlausiblePrice(p, mkt));
 }
 
 // OKX P2P — GET /v3/c2c/tradingOrders/books?side=sell&...
-async function okx(fiat) {
+async function okx(fiat, fx) {
   const path = '/v3/c2c/tradingOrders/books'
     + `?quoteCurrency=${fiat}&baseCurrency=USDT&side=sell`
     + '&paymentMethod=all&userType=all&showTrade=false&showFollow=false'
     + '&showAlreadyTraded=false&isAbleFilter=false';
   const j = await request({
-    method: 'GET', host: 'www.okx.com', path,
+    method: 'GET',
+    host: 'www.okx.com',
+    path,
     headers: { 'User-Agent': 'Mozilla/5.0' }
   });
   if (!j || !j.data || j.code !== 0) return [];
   const ads = j.data.sell || [];
-  return ads.filter(a => a.price).map(a => parseFloat(a.price));
+  const mkt = fx[fiat];
+  return ads
+    .filter(a => a.price)
+    .map(a => parseFloat(a.price))
+    .filter(p => isPlausiblePrice(p, mkt));
 }
 
-async function fetchAllSources(fiat) {
-  // Try in order, return as soon as one returns ≥3 ads (thin-market guard).
+async function fetchAllSources(fiat, fx) {
+  // Try in order, return as soon as one returns >=3 ads (thin-market guard).
   const sources = [
     ['binance', binance],
     ['bybit',   bybit],
@@ -111,7 +154,7 @@ async function fetchAllSources(fiat) {
   ];
   for (const [name, fn] of sources) {
     try {
-      const prices = await fn(fiat);
+      const prices = await fn(fiat, fx);
       if (prices.length >= 3) return { source: name, prices };
     } catch (e) { /* try next */ }
   }
@@ -120,11 +163,28 @@ async function fetchAllSources(fiat) {
 
 async function fetchFx() {
   return new Promise((resolve) => {
-    https.get('https://open.er-api.com/v6/latest/USD', (res) => {
+    const req = https.get('https://open.er-api.com/v6/latest/USD', (res) => {
       let raw = '';
-      res.on('data', c => raw += c);
-      res.on('end', () => { try { resolve(JSON.parse(raw).rates); } catch (e) { resolve({}); } });
+      let bytes = 0;
+      res.on('data', c => {
+        bytes += c.length;
+        if (bytes > MAX_BYTES) {
+          req.destroy(new Error('response too large'));
+          return;
+        }
+        raw += c;
+      });
+      res.on('error', () => resolve({}));
+      res.on('end', () => {
+        try {
+          resolve(JSON.parse(raw).rates || {});
+        } catch (e) {
+          resolve({});
+        }
+      });
     });
+    req.setTimeout(TIMEOUT_MS, () => req.destroy(new Error('timeout')));
+    req.on('error', () => resolve({}));
   });
 }
 
@@ -134,22 +194,35 @@ async function fetchFx() {
   log('Currency | Mkt rate   | P2P med(5)   | offsetPct  | source   | n ads');
   log('---------|------------|--------------|------------|----------|------');
   for (const [code, fiat] of CURRENCIES) {
-    const { source, prices } = await fetchAllSources(fiat);
+    const { source, prices } = await fetchAllSources(fiat, fx);
     const mkt = fx[fiat];
     if (!prices.length) {
       log(`${code} ${fiat.padEnd(4)} | ${(mkt||0).toFixed(2).padStart(10)} | (none)       | null       | (none)   | 0`);
       results[code] = { fiat, marketRate: mkt, p2pMedian: null, offsetPct: null, source: null, nAds: 0 };
       continue;
     }
-    const sorted = prices.slice(0, 5).sort((a,b) => a - b);
-    const median = sorted[Math.min(2, sorted.length - 1)];
+    // Sort all valid prices ascending
+    const sortedAll = prices.slice().sort((a, b) => a - b);
+    const top5 = sortedAll.slice(0, 5);
+    const midIdx = Math.floor(top5.length / 2);
+    const median = top5.length % 2 === 0
+      ? (top5[midIdx - 1] + top5[midIdx]) / 2
+      : top5[midIdx];
+
     const offsetPct = mkt ? ((median / mkt - 1) * 100) : null;
     log(`${code} ${fiat.padEnd(4)} | ${(mkt||0).toFixed(2).padStart(10)} | ${median.toFixed(2).padStart(12)} | ${(offsetPct == null ? 'no fx' : offsetPct.toFixed(2) + '%').padStart(9)} | ${source.padEnd(8)} | ${prices.length}`);
-    results[code] = { fiat, marketRate: mkt, p2pMedian: median, offsetPct: offsetPct == null ? null : +offsetPct.toFixed(1), source, nAds: prices.length };
+    results[code] = {
+      fiat,
+      marketRate: mkt,
+      p2pMedian: median,
+      offsetPct: offsetPct == null ? null : +offsetPct.toFixed(1),
+      source,
+      nAds: prices.length
+    };
     await new Promise(r => setTimeout(r, 200));
   }
   if (JSON_ONLY) {
-    process.stdout.write(JSON.stringify({ ts: Date.now(), results }, null, 2) + '\n');
+    process.stdout.write(JSON.stringify({ results }, null, 2) + '\n');
   } else {
     log('\nJSON:');
     log(JSON.stringify(results, null, 2));
