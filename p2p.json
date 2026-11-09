@@ -1,18 +1,18 @@
 {
-  "ts": 1794207702920,
+  "ts": 1794211314005,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 124.311672,
-      "p2pMedian": 129.69,
-      "offsetPct": 4.3,
+      "p2pMedian": 129.82,
+      "offsetPct": 4.4,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 276.770608,
-      "p2pMedian": 286.1,
+      "p2pMedian": 286.2,
       "offsetPct": 3.4,
       "source": "binance",
       "nAds": 10
@@ -44,7 +44,7 @@
     "CD": {
       "fiat": "CDF",
       "marketRate": 2299.322959,
-      "p2pMedian": 2549.25,
+      "p2pMedian": 2549.24,
       "offsetPct": 10.9,
       "source": "binance",
       "nAds": 10
@@ -60,8 +60,8 @@
     "KE": {
       "fiat": "KES",
       "marketRate": 129.939272,
-      "p2pMedian": 130,
-      "offsetPct": 0,
+      "p2pMedian": 130.05,
+      "offsetPct": 0.1,
       "source": "binance",
       "nAds": 10
     },
