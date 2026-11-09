@@ -1,18 +1,18 @@
 {
-  "ts": 1794178883636,
+  "ts": 1794182633384,
   "results": {
     "BD": {
       "fiat": "BDT",
       "marketRate": 124.570146,
-      "p2pMedian": 129.3,
-      "offsetPct": 3.8,
+      "p2pMedian": 129.15,
+      "offsetPct": 3.7,
       "source": "binance",
       "nAds": 10
     },
     "PK": {
       "fiat": "PKR",
       "marketRate": 276.577812,
-      "p2pMedian": 298.76,
+      "p2pMedian": 298.64,
       "offsetPct": 8,
       "source": "binance",
       "nAds": 10
@@ -52,23 +52,23 @@
     "AO": {
       "fiat": "AOA",
       "marketRate": 926.51993,
-      "p2pMedian": 1194.3,
-      "offsetPct": 28.9,
+      "p2pMedian": 1193.23,
+      "offsetPct": 28.8,
       "source": "binance",
       "nAds": 10
     },
     "KE": {
       "fiat": "KES",
       "marketRate": 129.920856,
-      "p2pMedian": 130.14,
-      "offsetPct": 0.2,
+      "p2pMedian": 130,
+      "offsetPct": 0.1,
       "source": "binance",
       "nAds": 10
     },
     "CO": {
       "fiat": "COP",
       "marketRate": 3239.854719,
-      "p2pMedian": 3210.2,
+      "p2pMedian": 3212,
       "offsetPct": -0.9,
       "source": "binance",
       "nAds": 10
@@ -84,7 +84,7 @@
     "GT": {
       "fiat": "GTQ",
       "marketRate": 7.650933,
-      "p2pMedian": 8.404,
+      "p2pMedian": 8.403,
       "offsetPct": 9.8,
       "source": "binance",
       "nAds": 10
@@ -92,16 +92,16 @@
     "DO": {
       "fiat": "DOP",
       "marketRate": 60.515425,
-      "p2pMedian": 61.51,
-      "offsetPct": 1.6,
+      "p2pMedian": 61.61,
+      "offsetPct": 1.8,
       "source": "binance",
       "nAds": 10
     },
     "HN": {
       "fiat": "HNL",
       "marketRate": 26.905851,
-      "p2pMedian": 28,
-      "offsetPct": 4.1,
+      "p2pMedian": 27.66,
+      "offsetPct": 2.8,
       "source": "binance",
       "nAds": 10
     },
@@ -116,8 +116,8 @@
     "PY": {
       "fiat": "PYG",
       "marketRate": 6107.599103,
-      "p2pMedian": 6254.99,
-      "offsetPct": 2.4,
+      "p2pMedian": 6262,
+      "offsetPct": 2.5,
       "source": "binance",
       "nAds": 10
     },
